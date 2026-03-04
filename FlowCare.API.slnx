@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../FlowCare.Application/FlowCare.Application.csproj" />
+  <Project Path="../FlowCare.Domain/FlowCare.Domain.csproj" />
+  <Project Path="../FlowCare.Infrastructure/FlowCare.Infrastructure.csproj" />
+  <Project Path="FlowCare.API.csproj" />
+</Solution>
