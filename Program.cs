@@ -2,7 +2,8 @@
 using FlowCare.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
-
+using FlowCare.Application;
+using FlowCare.Infrastructure.Data;
 namespace FlowCare.API
 {
     public class Program
@@ -22,6 +23,9 @@ namespace FlowCare.API
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            builder.Services.AddInfrastructure(builder.Configuration);
+            builder.Services.AddApplication();
 
             var app = builder.Build();
 
